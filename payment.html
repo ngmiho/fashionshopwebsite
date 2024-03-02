@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <title>Nguyễn Minh Hoàng - PS26822</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+    <link rel="stylesheet" href="css/slideshow.css">
+    <script src="js/slideshow.js"></script>
+    <script src="js/payment.js"></script>
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="js/cart.js"></script>
+</head>
+<body>
+    <header>
+        <a href="listsp.html">NGUUMIHO'S FASHION</a>
+        <b id="soluong"></b>
+    </header>
+    <div id="slide">
+        <img src="images/slideshow/slider1.jpg" alt="" id="hinh">
+        <b id="mota"></b>
+        <i class="fa fa-chevron-circle-left" onclick="prev()"></i>
+        <i class="fa fa-chevron-circle-right" onclick="next()"></i>
+    </div>
+    <div id="nut">    
+        <button onclick="taoCart()">Tạo Cart</button>
+        <button onclick="hienCart()">Hiện Cart</button>
+        <button onclick="xoaCart()">Xóa Cart</button>
+    </div>
+    <hr width="400px">
+    <div id="giohang"></div>
+    <div id="tongtiengiohang">Tổng tiền giỏ hàng</div>
+    <footer class="khung-thanh-toan">
+        <center><h2>THANH TOÁN MUA HÀNG</h2></center>
+        <form name="frmlogin" action="xuly.php" onsubmit="return kiemtra()">
+            <div class="form-group">
+                <legend style="font-weight: bold;">Họ tên</legend>
+                <input type="text" name="u" class="form-control">
+                <br>
+                <em style="color:red">Nhập họ tên từ 6 đến 30 ký tự</em>
+            </div>
+            <div class="form-group">
+                <div style="font-weight: bold;">Email</div>
+                <input type="email" name="e" class="form-control" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="" >
+            </div>
+            <div class="form-group">
+                <div style="font-weight: bold;">Telephone</div>
+                <input type="tel" name="Telephone" class="form-control" >
+            </div>
+            <div class="form-group">
+                <legend style="font-weight: bold;">Phương thức thanh toán</legend>
+                <label for="">
+                    <input type="radio" name="" id="">Chuyển khoản
+                    <input type="radio" name="" id="">Thẻ AMT nội địa
+                    <input type="radio" name="" id="">Khi nhận hàng
+                    <br>
+                    <em style="color:red">Hãy chọn 1 phương thức thanh toán</em>
+                </label>
+            </div>
+            <div class="form-group">
+                <legend style="font-weight: bold;">Chọn tỉnh</legend>
+                <input list="browsers" class="form-control">
+                <datalist id="browsers">
+                    <option value="">Tỉnh</option>
+                    <option value="TP.Hồ Chí Minh"></option>
+                    <option value="TP.Hà Nội"></option>
+                    <option value="TP.Đà Nẵng"></option>
+                    <option value="TP.Pleiku"></option>
+                    <option value="TP.Huế"></option>
+                </datalist>
+                <br>
+                <em style="color:red">Chọn tỉnh đi bạn nhé</em>
+                <p><label for="" style="font-weight: bold;">Nơi nhận hàng</label>
+                    <input type="radio" name="diachi" onclick="hienthi(false)">Nội thành
+                    <input type="radio" name="diachi" onclick="hienthi(true)">Ngoại thành
+                </p>
+                <p id="vc"><label for="">Phí vận chuyển:</label><input id="phi_vc" value="100.000 VND" style="border:none"></p>
+            </div>
+            <div class="form-group" align="center">
+                <button type="submit" class="form-button" style="font-weight: bold;">Thanh toán</button>
+            </div>
+            <h4 id="bao-loi" align="center"></h4>
+        </form>
+    </footer>  
+    <footer class="container-footer">
+        <div id="dongho"></div>
+        <h1 align="center" id="thoigian"></h1>
+        <div id="countdown" align="center"></div>
+        <img src="images/hpny.png" alt="" id="ftimg">
+    </footer>
+</body>
+<script src="js/"></script>

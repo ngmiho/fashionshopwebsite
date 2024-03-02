@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Nguyễn Minh Hoàng - PS26822</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+    <link rel="stylesheet" href="css/slideshow.css">
+    <script src="js/slideshow.js"></script>
+    <script src="js/payment.js"></script>
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="js/cart.js"></script>
+    <style>
+        .container-footer {width: 1000px; margin: 0 auto;
+        width: 1000px; height: 300px; margin-top: 10px;}
+        .form-button {width: 180px; height: 40px; text-align: center; border: 1px solid lightslategray;
+            text-align: center; font-size: 25px; font-weight: bold; padding-top: 5px;
+            background-color: gray; color: white;
+        }
+        #ftimg {width: 1000px; height: 300px;}
+        #phi_vc{padding-left: 40px;}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="listsp.html">NGUUMIHO'S FASHION</a>
+        <b id="soluong"></b>
+    </header>
+    <div id="slide">
+        <img src="images/slideshow/slider1.jpg" alt="" id="hinh">
+        <b id="mota"></b>
+        <i class="fa fa-chevron-circle-left" onclick="prev()"></i>
+        <i class="fa fa-chevron-circle-right" onclick="next()"></i>
+    </div>
+    <footer class="container-footer">
+        <img src="images/coming.png" alt="">
+        <div id="dongho"></div>
+        <h1 align="center" id="thoigian"></h1>
+        <div id="countdown" align="center"></div>
+        <img src="images/hpny.png" alt="" id="ftimg">
+    </footer>
+</body>
+<script src="js/countdown.js"></script>

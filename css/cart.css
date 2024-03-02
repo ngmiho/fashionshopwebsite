@@ -1,0 +1,19 @@
+#nut { text-align: center;}
+#nut button { width: 120px; height: 30px; margin-top: 10px; background-color: rgb(155, 151, 151); color: white;}   
+#giohang {  width: 831px; margin: auto; } 
+#tongtiengiohang { text-align: center; font-size: 1.8em; color: white; margin-top: 12px;
+border: 1px solid gray; width: 500px; margin: auto; height: 40px; padding-top: 10px; margin-top: 10px; background-color: gray;}
+
+#giohang .rows {
+    display: grid; 
+   grid-template-columns: 61px 350px 100px 100px 130px 90px;
+    background-color: gray; color: white; font-size: 18px;
+    }
+#giohang .rows * {
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    text-align: center;
+}
+#giohang .rows input {
+    width: 60px; text-align: center;
+    }
