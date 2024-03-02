@@ -6,4 +6,4 @@
 ![](https://github.com/ngmiho/fashionshopwebsite/blob/main/images/readme/layout3.png)
 ![](https://github.com/ngmiho/fashionshopwebsite/blob/main/images/readme/layout4.png)
 ![](https://github.com/ngmiho/fashionshopwebsite/blob/main/images/readme/layout5.png)
-#### © 2024 hint-code
+#### © 2024 ngmiho
